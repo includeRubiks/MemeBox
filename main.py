@@ -44,10 +44,13 @@ while running:
             running = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             x,y = pygame.mouse.get_pos()
+
             if y >= 20 and y <= 120:
                 for i in range(len(row1txt)):
                     if x >= i*240+20 and x <= i*240+20+200:
-                        print(f"Playing {row1mp3[i]}")
+                        mp3 = pygame.mixer.Sound(f'mp3s/{row1mp3[i]}')
+                        pygame.mixer.Sound.play(mp3)
+                        pygame.mixer.music.stop()
     
     screen.fill("white")
     
