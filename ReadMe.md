@@ -23,3 +23,5 @@ Open terminal and type `git clone https://github.com/includeRubiks/MemeBox.git`.
 ### Linux
 If you use linux I'm pretty sure you know how to use git but anyway open the terminal for your distro
 and type `git clone https://github.com/includeRubiks/MemeBox.git`.
+# How to use
+Run `main.py` for MemeBox and put mp3s in the `mp3s` folder. The names of the files will show up on the red boxes
